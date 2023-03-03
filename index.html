@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container col-md-12 col-lg-3 col-s-12">
+        <p>CASIO</p>
+        <input type="text" id="display" placeholder="0">
+        <br>
+             <div class="buttons">
+        <button  class="button number" onclick="DisplayNumber(7)" >7</button>
+        <button class="button number" onclick="DisplayNumber(8)">8</button>
+        <button class="button number"onclick="DisplayNumber(9)">9</button>
+        <button class="button operator"onclick="DisplayNumber('/')">/</button>
+        <br>
+        <button class="button number"onclick="DisplayNumber(4)">4</button>
+        <button class="button number"onclick="DisplayNumber(5)">5</button>
+        <button class="button number"onclick="DisplayNumber(6)">6</button>
+        <button class="button operator"onclick="DisplayNumber('*')">*</button>
+        
+            <br>
+        <button class="button number"onclick="DisplayNumber(1)">1</button>
+        <button class="button number"onclick="DisplayNumber(2)">2</button>
+        <button class="button number"onclick="DisplayNumber(3)">3</button>
+        <button class="button operator"onclick="DisplayNumber('-')">-</button>
+
+        <br>
+        <button class="button Clear" onclick=" RemoveLastItem()">C</button>
+        <button class="button number"onclick="DisplayNumber(0)">0</button>
+        <button class="button number"onclick="DisplayNumberzero(0,'0')">00</button>
+        <button class="button operator"onclick="DisplayNumber('+')">+</button>
+
+    
+       <br>
+       <button class="button AC" onclick=" clearDisplay()">AC</button>
+       <button class="button point"onclick="DisplayNumber('.')">.</button>
+       <button class="button equalto" onclick=" Evaluate()">=</button>
+       <button class="button operator"onclick="DisplayNumber('%')">%</button>
+    </div>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
